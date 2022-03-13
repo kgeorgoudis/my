@@ -10,7 +10,7 @@ set splitbelow splitright " Change the split screen behavior:q
 set title " Show file title
 set wildmenu " Show a more advance menu
 set tabstop=4 softtabstop=4
-set colorcolumn=80
+"set colorcolumn=80
 set background=dark
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 set nowrap
@@ -32,11 +32,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'kassio/neoterm'
 call plug#end()
 
 colorscheme gruvbox
 let g:blamer_enabled = 1
 let g:blamer_delay = 500
 
-map <silent> <C-n> :NERDTreeFocus<CR>
-map <silent> <C-c> :NERDTreeClose<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent> <C-`> :Topen<CR>
