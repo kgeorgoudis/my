@@ -1,5 +1,15 @@
 {
   "languageserver": {
+      "terraform": {
+          "command": "terraform-ls",
+          "args": ["serve"],
+          "filetypes": [
+				"terraform",
+				"tf"
+			],
+            "initializationOptions": {},
+			"settings": {}
+      },
       "golang": {
         "command": "gopls",
         "rootPatterns": ["go.mod"],
