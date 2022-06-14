@@ -13,6 +13,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4 softtabstop=4
 "set colorcolumn=80
+set mouse=a
 set background=dark
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 set nowrap
